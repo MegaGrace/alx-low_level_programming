@@ -1,0 +1,27 @@
+#include "main.h"
+
+/**
+ *jack_bauer - minutes of the day
+ *
+ */
+
+void jack_bauer(void)
+{
+int a, b, c, d, e, f;
+for (a = 0; a <= 24; a++)
+{
+b = a / 10;
+c = a % 10;
+for (d = 0; d < 60; d++)
+{
+e = b / 10;
+f = a % 10;
+_putchar('0' + c);
+_putchar('0' + d);
+_putchar(':');
+_putchar('0' + e);
+_putchar('0' + f);
+_putchar('\n');
+}
+}
+}

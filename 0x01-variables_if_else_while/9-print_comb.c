@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main: entry
+ *main - entry
  *Description: combinations of single digit numbers
  *Return: Always 0
  */

@@ -1,0 +1,42 @@
+#include "main.h"
+
+/**
+ *times_table - times table
+ *
+ */
+void times_table(void)
+{
+  int num, at, x, y, re;
+  for (num = 0; num <= 9; num++)
+    {
+      for (at = 0; at <= 9; at++)
+	{
+	  x = num * at;
+      y = x / 10;
+      re = x % 10;
+      if (at == 0)
+	{
+	  _putchar('0');
+	}
+      else if (x < 10)
+	{
+	  _putchar(' ');
+	  _putchar('0' + re);
+	}
+      else
+	{
+	  _putchar('0' + y);
+	  _putchar('0' + re);
+	}
+      if (at < 9)
+	{
+	  _putchar(',');
+	  _putchar(' ');
+	}
+      else
+	{
+	  _putchar('\n
+		   ;	}
+}
+}
+}

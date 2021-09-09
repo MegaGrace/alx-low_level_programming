@@ -11,15 +11,16 @@ int _strlen(char *s);
 
 char *_strncat(char *dest, char *src, int n)
 {
+	int len1 = _strlen(dest);
+	int i = 0;
+	int c;
 
-	int c = 0, x;
-	int cnt = _strlen(dest);
-
-	for (x = cnt; x >= cnt + n; x++, c++)
+	for (c = len1; c < len1 + n; c++, i++)
 	{
-		dest[x] = src[c];
+		dest[c] = src[i];
 	}
-		return (dest);
+
+	return (dest);
 }
 
 /**

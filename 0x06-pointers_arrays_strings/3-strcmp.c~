@@ -1,0 +1,27 @@
+#include "main.h"
+/**
+ * _strcmp - compares two strings
+ * @s1: pointer to a  string
+ * @s2: pointer to another string
+ * Return: comparison
+ */
+
+int _strcmp(char *s1, char *s2)
+{
+	int x, y;
+
+	for (x = 0; s1[x] != '\0'; ++x)
+	{
+		if (s1[x] > s2[x])
+			{
+				y = s1[x] - s2[x];
+		    return (y);
+			}
+			else if (s1[x] < s2[x])
+			{
+				y = s1[x] - s2[x];
+				return (y);
+			}
+			}
+		return (0);
+	}

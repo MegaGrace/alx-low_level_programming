@@ -11,32 +11,21 @@ int _strlen(char *s);
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int len1 = _strlen(dest);
-	int i = 0;
-	int c;
+	int len, i;
 
-	for (c = len1; c < len1 + n; c++, i++)
+	i = len = 0;
+
+	while (dest[len] != '\0')
 	{
-		dest[c] = src[i];
+		++len;
 	}
 
+	while (src[i] != 0 && i < n)
+	{
+		dest[len] = src[i];
+		++i;
+		++len;
+	}
+	dest[len] = '\0';
 	return (dest);
-}
-
-/**
- * _strlen - returns the length of a string
- * @s: pointer to string
- *
- * Return: The length of the string
- */
-
-int _strlen(char *s)
-{
-	int c = 0;
-
-	while (s[c] != '\0')
-	{
-		c++;
-	}
-	return (c);
 }

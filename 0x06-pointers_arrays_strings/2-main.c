@@ -22,7 +22,7 @@ int main(void)
 	p = _strncpy(s1, "First, solve the problem. Then, write the code\n", 5);
 	printf("%s\n", s1);
 	printf("%s\n", p);
-	p = _strncpy(s1, "First, solve the problem. Then, write the code\n", 90);
+	p = _strncpy(s1, "First the problem. Then, write the code\n", 90);
 	printf("%s", s1);
 	printf("%s", p);
 	for (i = 0; i < 98; i++)
